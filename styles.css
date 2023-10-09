@@ -18,6 +18,7 @@ body{
     padding: 15px 0px 20px 100px;
 }
 .header-logo img{
+    margin: 0px 0px 0px 50px;
     margin-right: auto;
     width: 200px;
     padding: 0px 0px 90px 0px;
@@ -108,12 +109,18 @@ body{
 
 /* Quote Section */
 .hero-quote{
+    margin: 20px 0px;
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
     background-color: #E5E7EB;
     padding: 0 200px;
 }
+@media (max-width: 768px) {
+    .hero-quote {
+      margin: 20px 0; /* Adjusted margin for smaller screens */
+    }
+  }
 .hero-quote p{
     font-size: 36px;
     font-style: italic;
@@ -133,11 +140,16 @@ body{
     display: flex;
     align-items: center;
     background-color: #3882F6;
-    margin: 50px 400px;
+    margin: 50px 100px;
     border-radius: 10px;
     border-color: none;
     padding: 10px 90px;
 }
+@media (max-width: 768px) {
+    .hero-sign {
+      margin: 50px 0; /* Adjusted margin for smaller screens */
+    }
+  }
 .hero-items{
     flex: 1;
 }
@@ -168,7 +180,6 @@ body{
 
 /* Footer Section */
 .hero-ftr{
-    flex-wrap: wrap;
     justify-content: center;
     display: flex;
     background-color: #1F2937;
